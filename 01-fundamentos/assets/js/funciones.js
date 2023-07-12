@@ -107,10 +107,45 @@ const retornoDeSaludar = saludar(' Emanuel', 24, true, 'Guetamala');
 
 //funcion de flecha 2
 
+// function sumar(a, b) {
+//     return a + b;
+// }
+
+// const sumar2 = (a, b) => { return a + b; }
+
+// console.log(sumar2(1, 2));
+
+///Otra forma de hacerlo seria
+
+
+// function sumar(a, b) {
+//     return a + b;
+// }
+
+// const sumar2 = (a, b) => a + b;
+
+// console.log(sumar2(2, 2));
+
+/// Otro metodo
+// function sumar(a, b) {
+//     return a + b;
+// }
+
+// const sumar2 = (a, b) => a + b;
+
+// function getAleatorio(){
+//     return Math.random();
+// }
+
+// console.log( getAleatorio() );
+
+//Funcion de flechas
 function sumar(a, b) {
     return a + b;
 }
 
-const sumar2 = (a, b) => { return a + b; }
+const sumar2 = (a, b) => a + b;
 
-console.log(sumar2(1, 2));
+const getAleatorio2 = () => Math.random();
+
+console.log(getAleatorio2());
