@@ -40,3 +40,24 @@ console.log('4 condiciones ', true || true || true || false);
 
 
 console.warn('Asignaciones');
+
+const soyUndefine = undefined;
+const soyNull = null;
+const soyFalso = false;
+
+// const a1 = true && 'Hello Word' && 150;
+const a1 = false && 'Hello Word' && 150;
+// const a2 = 'Hello' && 'Word'
+const a2 = 'Hello' && 'Word' && soyFalso && true;
+const a3 = soyFalso || 'Ya no soy falso'
+const a4 = soyFalso || soyUndefine || soyNull || 'Ya no soy falso de nuevo'
+const a5 = soyFalso || soyUndefine || regresaTrue() || 'Ya no soy falso de nuevo'
+
+
+console.log({ a1, a2, a3, a4, a5 });
+
+if (regresaFalse() && regresaTrue() && (true || false || true)) {
+    console.log('Hacer Algo');
+} else {
+    console.log('Hacer otra Cosa');
+}
