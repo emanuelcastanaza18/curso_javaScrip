@@ -158,6 +158,7 @@
 
 ///Optomizaciones
 
+//https://www.toptal.com/developers/javascript-minifier
 
 const miModulo = (() => {
     'use strict';
