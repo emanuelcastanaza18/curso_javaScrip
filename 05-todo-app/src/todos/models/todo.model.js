@@ -4,11 +4,11 @@ export class Todo {
 
     /**
      * 
-     * @param {String} descripcion 
+     * @param {String} description 
      */
-    constructor(descripcion) {
+    constructor(description) {
         this.id = uuid();
-        this.descripcion = descripcion;
+        this.description = description;
         this.done = false;
         this.createdAt = new Date();
     }
