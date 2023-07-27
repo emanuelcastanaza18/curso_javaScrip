@@ -9,6 +9,12 @@ export const promiseRaceComponent = (element) => {
         element.innerHTML = value;
     }
 
-    renderValue('k')
+
 }
+
+
+const slowPromise = () => new Promise(resolve => {
+setTimeout(())
+})
+
 
