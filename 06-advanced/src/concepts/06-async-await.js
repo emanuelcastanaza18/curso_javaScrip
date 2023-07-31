@@ -17,6 +17,7 @@ export const asyncAwaitComponent = async (element) => {
     } catch (error) {
         element.innerHTML = error;
     }
+    
 
 }
 
