@@ -10,9 +10,9 @@ export const forAwaitComponent = async (element) => {
 
     const heroPromises = getHeroesAsync(heroIds);
 
-    for await(const )
-
-
+    for await (const hero of heroPromises) {
+        element.innerHTML += `${hero.name} <br/>`
+    }
 
 }
 
