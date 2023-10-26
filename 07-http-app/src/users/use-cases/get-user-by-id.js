@@ -1,10 +1,10 @@
-import { localhostUserToModel } from "../mappers/localhost-user.mapper";
-import { User } from "../models/user";
+import { localhostUserToModel } from '../mappers/localhost-user.mapper';
+import { User } from '../models/user';
 
 /**
  * 
  * @param {String|Number} id 
- * @returns { Promise <User\>}
+ * @returns { Promise<User> }
  */
 export const getUserById = async (id) => {
 

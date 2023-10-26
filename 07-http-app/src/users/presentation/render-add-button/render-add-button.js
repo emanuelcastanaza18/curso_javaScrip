@@ -1,11 +1,11 @@
 import { showModal } from '../render-modal/render-modal';
-import './render-add-button.css'
+import './render-add-button.css';
 
 /**
  * 
  * @param {HTMLDivElement} element 
  */
-export const renderAddButton = (element, callback) => {
+export const renderAddButton = (element) => {
 
     const fabButton = document.createElement('button');
     fabButton.innerText = '+';
@@ -13,9 +13,9 @@ export const renderAddButton = (element, callback) => {
 
     element.append(fabButton);
 
-    
-    fabButton.addEventListener('click', () =>{
+    //TODO:
+    fabButton.addEventListener('click', () => {
         showModal();
-    })
+    });
 
 }

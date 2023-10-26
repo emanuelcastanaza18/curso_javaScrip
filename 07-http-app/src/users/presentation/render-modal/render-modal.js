@@ -1,6 +1,7 @@
-import modalHTML from './render-modal.html?raw';
-import { User } from "../../models/user";
+import modalHtml from './render-modal.html?raw';
+import { User } from '../../models/user';
 import { getUserById } from '../../use-cases/get-user-by-id';
+
 import './render-modal.css';
 
 let modal, form;
@@ -22,7 +23,6 @@ export const showModal = async (id) => {
 export const hideModal = () => {
     modal?.classList.add('hide-modal');
     form?.reset();
-
 }
 
 
@@ -39,17 +39,18 @@ const setFormValues = (user) => {
 }
 
 
+
 /**
  * 
  * @param {HTMLDivElement} element 
- * @param {(userLike)=>Promise<void>} callback
+ * @param {(userLike)=> Promise<void> } callback
  */
 export const renderModal = (element, callback) => {
 
     if (modal) return;
 
     modal = document.createElement('div');
-    modal.innerHTML = modalHTML;
+    modal.innerHTML = modalHtml;
     modal.className = 'modal-container hide-modal';
     form = modal.querySelector('form');
 
@@ -81,6 +82,7 @@ export const renderModal = (element, callback) => {
             userLike[key] = value;
         }
 
+        // console.log(userLike);
         await callback(userLike);
 
         hideModal();

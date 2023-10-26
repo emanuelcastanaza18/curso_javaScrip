@@ -3,8 +3,8 @@ button {
 }
 
 #current-page {
-    font-size: 1.3rem;
     color: white !important;
-    margin-right: 10px;
+    font-size: 1.3rem;
     margin-left: 10px;
+    margin-right: 10px;
 }

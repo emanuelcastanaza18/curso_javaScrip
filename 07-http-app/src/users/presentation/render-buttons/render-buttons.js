@@ -20,16 +20,17 @@ export const renderButtons = (element) => {
 
     element.append(prevButton, currentPageLabel, nextButton);
 
+
     nextButton.addEventListener('click', async () => {
         await usersStore.loadNextPage();
         currentPageLabel.innerText = usersStore.getCurrentPage();
         renderTable(element);
-    })
+    });
 
     prevButton.addEventListener('click', async () => {
         await usersStore.loadPreviousPage();
         currentPageLabel.innerText = usersStore.getCurrentPage();
         renderTable(element);
     });
-}
 
+}
